@@ -6,8 +6,30 @@
     <div class="content-container">
         <div class="profile-content">
             <h3 style="text-align: center; margin-bottom: 20px">Đơn hàng của bạn</h3>
-            <div class="card" style="margin-bottom: 10px; height: 60px; padding: auto;">
-                <div class="card-body p-4">
+            <div class="card" style="margin-bottom: 10px; height: 60px; padding: auto; position: sticky;">
+                <section class="card_state card-body">
+                    <a class="state active" href="" title="Tất cả" aria-role="Tab" >
+                        <span>Tất cả</span>
+                    </a>
+                    <a class="state" href="" title="Chờ xử lí" aria-role="Tab" >
+                        <span>Chờ xử lí</span>
+                    </a>
+                    <a class="state" href="" title="Đang chuẩn bị" aria-role="Tab" >
+                        <span>Đang chuẩn bị</span>
+                    </a>
+                    <a class="state" href="" title="Đang giao" aria-role="Tab" >
+                        <span>Đang giao</span>
+                    </a>
+                    <a class="state" href="" title="Đã giao" aria-role="Tab" >
+                        <span>Đã giao</span>
+                    </a>
+                    <a class="state" href="" title="Đã hủy" aria-role="Tab" >
+                        <span>Đã hủy</span>
+                    </a>
+                </section>
+            </div>
+            <!-- <div class="card" style="margin-bottom: 10px; height: 60px; padding: auto;">
+                <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-md-2 d-flex justify-content-center">
                             <p class="name_col" style="display: none;"></p>
@@ -119,7 +141,12 @@
                         </p>
                     </div>
                 </div>
+            </div> -->
+            <div class="card" style="width: 100%; height: 450px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img class="img_card_none" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/orderlist/5fafbb923393b712b964.png" alt="">
+                <p>Chưa có đơn hàng</p>
             </div>
+
         </div>
     </div>
 </div>
