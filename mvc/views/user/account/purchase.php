@@ -28,7 +28,7 @@
                     </a>
                 </section>
             </div>
-            <!-- <div class="card" style="margin-bottom: 10px; height: 60px; padding: auto;">
+            <div class="card" style="margin-bottom: 10px; height: 60px; padding: auto;">
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col-md-2 d-flex justify-content-center">
@@ -51,6 +51,19 @@
             </div>
 
             <div class="card" style="margin-bottom: 10px;">
+                <div style="padding: 10px 24px; border-bottom: 1px groove; align-items:center; display:flex">
+                    <div style="flex-grow:1;">
+                        <span>Ngày đặt hàng: </span>
+                        <span>15/06/2024</span>
+                    </div>
+                    <div style="display: flex; align-items:center;">
+                        <p style="margin:0px">
+                            <span style="padding-right: 5px;">Trạng thái:</span>
+                            <span>Chờ xử lí</span>
+                        </p>
+                        <button class="button" onclick="deleteProduct(this)" style="border: 1px solid;margin-left:10px;background-color: #008CBA;color:white; border-radius:5px">Hủy đơn</button>
+                    </div>
+                </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2">
@@ -79,24 +92,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="row-cols-md-4">
+                <div style="padding: 10px 24px; border-top: soild">
                     <div class="float-end">
-                        <p class="">
-                            <span style="font-size: 17px;padding-right: 5px;">Tổng: </span>
-                            <span style="font-size: 17px;">1616000</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="row-cols-md-4">
-                    <div class="float-end">
-                        <p class="d-flex">
-                            <span style="font-size: 17px;padding-right: 5px;">Trạng thái:</span>
-                            <span style="font-size: 17px;;">Đã giao</span>
-                        </p>
+                        <span style="font-size: 17px;padding-right: 5px;">Tổng: </span>
+                        <span style="font-size: 17px;">1616000</span>
                     </div>
                 </div>
             </div>
             <div class="card" style="margin-bottom: 10px;">
+                <div style="padding: 10px 24px; border-bottom: 1px groove; align-items:center; display:flex">
+                    <div style="flex-grow:1;">
+                        <span>Ngày đặt hàng: </span>
+                        <span>15/06/2024</span>
+                    </div>
+                    <div style="display: flex; align-items:center;">
+                        <p style="margin:0px">
+                            <span style="padding-right: 5px;">Trạng thái:</span>
+                            <span>Đã giao</span>
+                        </p>
+                        <button class="button hidden" onclick="deleteProduct(this)" style="border: 1px solid;margin-left:10px;background-color: #008CBA;color:white; border-radius:5px">Hủy đơn</button>
+                    </div>
+                </div>
                 <div class="card-body p-4">
                     <div class="row align-items-center">
                         <div class="col-md-2">
@@ -125,28 +141,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="row-cols-md-4">
+                <div style="padding: 10px 24px; border-top: soild">
                     <div class="float-end">
-                        <p class="">
-                            <span style="font-size: 17px;padding-right: 5px;">Tổng: </span>
-                            <span style="font-size: 17px;">1616000</span>
-                        </p>
+                        <span style="font-size: 17px;padding-right: 5px;">Tổng: </span>
+                        <span style="font-size: 17px;">1616000</span>
                     </div>
                 </div>
-                <div class="row-cols-md-4">
-                    <div class="float-end">
-                        <p class="d-flex">
-                            <span style="font-size: 17px;padding-right: 5px;">Trạng thái:</span>
-                            <span style="font-size: 17px;;">Đã giao</span>
-                        </p>
-                    </div>
-                </div>
-            </div> -->
+            </div>
             <div class="card" style="width: 100%; height: 450px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                 <img class="img_card_none" src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/orderlist/5fafbb923393b712b964.png" alt="">
                 <p>Chưa có đơn hàng</p>
             </div>
-
         </div>
     </div>
 </div>
