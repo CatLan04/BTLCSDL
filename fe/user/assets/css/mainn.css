@@ -125,7 +125,7 @@ a{
 .header {
     height: 75px;
     /* font-size: 60px; */
-    background-color: #e1d9d9bd;
+    background-color: #fecedc;
 }
 .header__navbar {
     display: flex;
