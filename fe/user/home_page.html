@@ -66,7 +66,7 @@
                                     src="https://lh6.googleusercontent.com/AO_yMMaWSOM5qA-lC4AjlJ6AVE_QQglN5JycfxoRUffTCqfRjJr_K--UrhtHXAjKo6Bts_vTIbupvZgfuRp0XhAql6wSMWjOL3P6cgjJv6KFuKp7uTZMn-3nysHJjQOmQmkVPueH"
                                     alt="">
                                 <h4 class="product_name">áo 1</h4>
-                                <h5 class="product_price">100$</h5>
+                                <h5 class="product_price amount-to-format">100$</h5>
                             </a>
                         </div>
                         <div class="grid__colum-2">
@@ -194,5 +194,16 @@
 </body>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 <script src="./assets/js/home_page.js"></script>
-
+<script>
+    // Hàm để định dạng số tiền sang VND
+    function formatToVND(amount) {
+        return amount.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+    }
+    
+    // Lặp qua tất cả các thẻ có class="amount-to-format" và định dạng lại số tiền thành VND
+    document.querySelectorAll('.amount-to-format').forEach(element => {
+        const amountValue = parseFloat(element.textContent); // Lấy giá trị số tiền từ nội dung của thẻ
+        element.textContent = formatToVND(amountValue); // Định dạng lại số tiền thành VND và cập nhật nội dung của thẻ
+    });
+    </script>
 </html>
